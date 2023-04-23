@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+# 자동차 종류가 suv인 차들의 일일 대여 요금 출력
+SELECT ROUND(AVG(DAILY_FEE))
+FROM CAR_RENTAL_COMPANY_CAR
+WHERE CAR_TYPE = 'SUV'
+GROUP BY CAR_TYPE
